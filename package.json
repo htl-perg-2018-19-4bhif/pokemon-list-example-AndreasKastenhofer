@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "startc": "npm run build && node index.js",
+    "start": "concurrently \"tsc --watch index.ts\" \"browser-sync start --server --watch --files 'detail.html' 'index.js'\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.2.1",
+    "browser-sync": "^2.26.3"
+  },
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "query-string": "^6.2.0"
+  }
+}
